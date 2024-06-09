@@ -11,8 +11,8 @@ const promise3 = new Promise((resolve, reject) => {
 Promise.customAllSettled = function (promises) {
   return new Promise((resolve, reject) => {
     const result = [];
-    for (let i = 0; i < promises.length; i++) {
-      promises[i]
+    for (const element of promises) {
+      element
         .then((data) => {
           result.push({ status: "fulfilled", value: data });
         })

@@ -15,6 +15,7 @@ console.log(
       address: {
         city: "Delhi",
         country: "India",
+        nums: [1,2,3,4]
       },
     },
   })
